@@ -3,7 +3,8 @@
 
 let items = [8, 7, 2, 5, 3, 1]
 let sum = 10
-sortAndSum(items, sum)
+hashAndFind(items, sum)
+//sortAndSum(items, sum)
 
 function hashAndFind(items, sum)
 {
