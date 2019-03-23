@@ -16,9 +16,11 @@ function hashAndFind(items, sum)
 
 		let operand = sum - items[i]
 
-		if (hash[operand] != undefined)		console.log( `${items[i]} (index = ${i}) + ${operand} (index = ${hash[operand]}) = ${sum}` )
+		if (hash[operand] != undefined)
+		{
+			console.log( `${items[i]} (index = ${i}) + ${operand} (index = ${hash[operand]}) = ${sum}` )
+		}
 	}
-
 }
 
 
@@ -41,6 +43,5 @@ function sortAndSum(items, sum)
 
 		if (left > right)
 			break
-
 	}
 }
