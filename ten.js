@@ -2,8 +2,8 @@ let x = [1, 4, 7, 8, 10]
 let y = [2, 3, 9]
 
 sortArrays(x, y)
-alert(x)
-alert(y)
+console.log(x)
+console.log(y)
 
 function swap(x, xInd, y)
 {

@@ -14,7 +14,7 @@ function fillAndAdd(items, leftMostValue = 0)
 	}
 	for (let i = leftMostIndex; i < items.length; i++)	items[i] = rightMostValue
 
-	alert(items)
+	console.log(items)
 }
 
 function mergeTwoBinaryArrays(items, leftMostValue = 0)
@@ -27,11 +27,11 @@ function mergeTwoBinaryArrays(items, leftMostValue = 0)
 		if (items[i] === leftMostValue)	++leftValueOccurence
 		else	++rightValueOccurence
 	}
-	
+
 	let sorted = []
 	let rightMostValue = Number(!Boolean(leftMostValue))
 	sorted.push(...Array(leftValueOccurence).fill(leftMostValue))
 	sorted.push(...Array(rightValueOccurence).fill(rightMostValue))
 
-	alert(sorted)
+	console.log(sorted)
 }

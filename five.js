@@ -12,7 +12,7 @@ function sortAndFind(items)
 	{
 		if (items[i] === items[i -1])
 		{
-			alert(`Dup element is ${items[i]}`)
+			console.log(`Dup element is ${items[i]}`)
 			return
 		}
 	}
@@ -35,7 +35,7 @@ function hashAndFind(items)
 		let value = items[i]
 		if (hash[value - min] === true)
 		{
-			alert(`Dup element is ${value}`)
+			console.log(`Dup element is ${value}`)
 			return
 		}
 		else 	hash[value - min] = true
