@@ -5,6 +5,10 @@ sortArrays(x, y)
 console.log(x)
 console.log(y)
 
+
+/*
+	Swaps elements of two arrays. Uses the first element of one array an index to get the other element of the other array.
+*/
 function swap(x, xInd, y)
 {
 	let temp = x[xInd]
@@ -12,6 +16,11 @@ function swap(x, xInd, y)
 	y[0] = temp
 }
 
+
+/*
+	Uses thefact that y is always sorted to keep both x and y sorted.
+	If x[index] is greater than y[0] then we swap. After which we resort the array.
+*/
 function sortArrays(x, y)
 {
 	for (let xInd = 0; xInd < x.length; xInd++)

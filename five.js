@@ -1,10 +1,15 @@
 "using strict"
-let items = [1, 2, 3, 4, 4]
-//let items = [1, 2, 3, 4, 2]
-//sortAndFind(items)
-hashAndFind(items)
+let items = [1, 2, 3, 4, 2]
+hashAndGrab(items)
+items = [1, 2, 3, 4, 4]
+sortAndFind(items)
 
 
+/*
+	Array is sorted. After which the adjacent elements are checked. Sorted adjacent elements are either dups or not.
+
+	Constant Sapce O(N).
+*/
 function sortAndFind(items)
 {
 	items.sort()
@@ -18,7 +23,13 @@ function sortAndFind(items)
 	}
 }
 
-function hashAndFind(items)
+
+/*
+	Keeps an array that acts as a hash. All indices are going to unique unless there is a dup value.
+
+	Not constant space. O(N) complexity.
+*/
+function hashAndGrab(items)
 {
 	let min = items[0]
 	let max = items[0]

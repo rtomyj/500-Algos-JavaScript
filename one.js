@@ -6,6 +6,13 @@ let sum = 10
 hashAndFind(items, sum)
 //sortAndSum(items, sum)
 
+
+/*
+	An object is used to remember a value and the index it was found in the original array.
+
+	Traverses an array of items and subtracts sum - current value. If that result is in the object  then it means we 
+	iterated over it already and we can print out the sum. 
+*/
 function hashAndFind(items, sum)
 {
 	let hash = {}
