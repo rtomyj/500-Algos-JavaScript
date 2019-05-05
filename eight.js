@@ -24,9 +24,9 @@
 	that has equal 0's and 1's.
 */
 let items = [1, 0, 1, 1, 0, 1, 0]
-getMaxLenSubarr(items)
+console.log(getMaxLenSubarr(items))
 items = [0, 0, 1, 0, 1, 0, 0]
-getMaxLenSubarr(items)
+console.log(getMaxLenSubarr(items))
 
 function getMaxLenSubarr(items)
 {
@@ -60,5 +60,6 @@ function getMaxLenSubarr(items)
 			left = leftRight[0], right = leftRight[1]
 		}
 	}
-	console.log(items.splice(left, right))
+
+	return items.splice(left, right)
 }
