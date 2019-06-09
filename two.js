@@ -19,7 +19,10 @@
 	(y value) of 2 again. So the sub array [-1, 3, -2] produces the net change of 0 (zero sum).
 */
 
-function findZeroSum(items)
+/*
+	Finds sub array with zero sum for a given sequence and returns it.
+*/
+function getZeroSum(items)
 {
 	let sum = 0	// running sum of all seen items through traversal
 	let graph = new Map()	// graph that keeps track of sums and their index - key is y axis (sum) and value is x axis
@@ -45,5 +48,5 @@ function findZeroSum(items)
 }
 
 let items = [3, 4, -7, 3, 1, 3, 1, -4, -2, -2]
-zeroSum = findZeroSum(items)
+zeroSum = getZeroSum(items)
 console.log(zeroSum)

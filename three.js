@@ -71,7 +71,11 @@
 	Since Graph 1 encompasses all original indexes we see that [0, 2) = [3, -3] and [0, 4) = [3, -3, 2, -2].
 	However, Graph 2 only considers the sub array [2 -2], so [0, 2) for Graph 2 is equal to [2, -2]
 */
-function findZeroSums(items)
+
+/*
+	Finds all sub array with zero sum for a given sequence and returns an array of arrays with all sub arrays.
+*/
+function getZeroSums(items)
 {
 	let graphs = []	// each index will be graph X and each value will be sum at given index for graph X (see above)
 	let zeroSums = []	// array holding all sub arrays with 0 graphs
@@ -104,6 +108,6 @@ function findZeroSums(items)
 }
 
 let items = [3, 4, -7, 3, 1, 3, 1, -4, -2, -2]
-zeroSums = findZeroSums(items)
+zeroSums = getZeroSums(items)
 console.log("All sub arrays with zero graphs:")
 console.log(zeroSums)
