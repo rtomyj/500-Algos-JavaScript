@@ -54,6 +54,8 @@ Given two sorted arrays x and y where x has a size of M and y has a size of N an
 
 13. Find maximum product of two integers in an array
 
+Given an array of integers, find the maximum multiple using only two of the arrays elements.
+
 14. Shuffle a given array of elements (Fisher-Yates shuffle)
 
 15. Rearrange the array with alternate high and low elements
