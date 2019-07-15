@@ -20,7 +20,8 @@ function findMaxMult(items)
 	}
 
 	/*
-		Handles arrays with sizes of 2 and greater
+		Cycles through array. Finds the max two elements and the min two elements.
+		We don't need to sort the array since we only need one traversal (O(n)) to find the min/max elements.
 	*/
 	items.forEach((item) =>
 	{
